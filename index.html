@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Our Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f9fb;
+      color: #222;
+      min-height: 100vh;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+      background: linear-gradient(135deg, #60c3ff 0%, #abecd6 100%);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #184d47;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 32px;
+      color: #184d47cc;
+      max-width: 480px;
+    }
+    .cta-button {
+      background-color: #184d47;
+      color: #fff;
+      border: none;
+      border-radius: 32px;
+      padding: 16px 40px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      box-shadow: 0 3px 10px rgba(24,77,71,0.10);
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background-color: #145a32;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 60px auto 24px auto;
+      max-width: 900px;
+      gap: 36px;
+      padding: 0 16px;
+    }
+    .feature {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 14px rgba(88,120,128,0.11);
+      padding: 36px 28px;
+      width: 270px;
+      text-align: center;
+      transition: box-shadow 0.18s;
+    }
+    .feature:hover {
+      box-shadow: 0 4px 24px rgba(88,120,128,0.15);
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 14px;
+      color: #60c3ff;
+    }
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #184d47;
+      margin-bottom: 8px;
+    }
+    .feature-text {
+      font-size: 1rem;
+      color: #555;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 810px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+      }
+      .feature {
+        width: 95%;
+        max-width: 340px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Welcome to Your Next Project</h1>
+    <p>
+      Create, collaborate, and launch. Everything you need, right at your fingertips.<br> Start your journey with us today!
+    </p>
+    <a class="cta-button" href="#get-started">Get Started</a>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">🚀</div>
+      <div class="feature-title">Fast & Reliable</div>
+      <div class="feature-text">
+        Experience blazing fast speed and robust reliability for all your mission-critical needs.
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">Secure</div>
+      <div class="feature-text">
+        We prioritize your privacy and protect your data with advanced security protocols.
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🤝</div>
+      <div class="feature-title">Easy Collaboration</div>
+      <div class="feature-text">
+        Work together effortlessly with intuitive collaboration tools built for teams.
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    &copy; 2024 Your Company Name. All rights reserved.
+  </footer>
+</body>
+</html>
